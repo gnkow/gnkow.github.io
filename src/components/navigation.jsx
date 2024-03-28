@@ -18,7 +18,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+            {props.data ? props.data.title : "Loading"}
           </a>{" "}
         </div>
 
@@ -29,37 +29,37 @@ export const Navigation = (props) => {
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="#features" className="page-scroll">
-                Features
+                {props.data ? props.data.title_features : "Loading"}
               </a>
             </li>
             <li>
               <a href="#about" className="page-scroll">
-                About
+                {props.data ? props.data.title_about : "Loading"}
               </a>
             </li>
             <li>
               <a href="#services" className="page-scroll">
-                Services
+                {props.data ? props.data.title_services : "Loading"}
               </a>
             </li>
             <li>
               <a href="#portfolio" className="page-scroll">
-                Gallery
+                {props.data ? props.data.title_gallery : "Loading"}
               </a>
             </li>
             <li>
               <a href="#testimonials" className="page-scroll">
-                Testimonials
+                {props.data ? props.data.title_reviews : "Loading"}
               </a>
             </li>
             <li>
               <a href="#team" className="page-scroll">
-                Team
+                {props.data ? props.data.title_team : "Loading"}
               </a>
             </li>
             <li>
               <a href="#contact" className="page-scroll">
-                Contact
+                {props.data ? props.data.title_contacts : "Loading"}
               </a>
             </li>
           </ul>

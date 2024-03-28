@@ -6,7 +6,7 @@ import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
+import { Team } from "./components/team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -25,15 +25,15 @@ const App = () => {
 
   return (
     <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      <Navigation data={landingPageData.navigation} />
+      <Header data={landingPageData.header} />
+      <Features data={landingPageData.features} />
+      <About data={landingPageData.about} />
+      <Services data={landingPageData.services} />
+      <Gallery data={landingPageData.gallery} />
+      <Testimonials data={landingPageData.testimonials} />
+      <Team data={landingPageData.team} />
+      <Contact data={landingPageData.contact} />
     </div>
   );
 };
