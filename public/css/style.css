@@ -1,9 +1,27 @@
+:root{
+  --light-grey: #999999;
+  --grey: #777777;
+  --dark-grey: #555555;
+  --dark: #333333;
+  --black-rgb:0,0,0;
+  --light-blue: #5ca9fb;
+  --light-blue-rgb: 92,169,251;
+  --blue: #608dfd;
+  --blue-rgb: 96,141,253;
+  --dark-blue:#6372ff;
+  --darkest-blue: #1f386e;
+  --white-rgb:255,255,255; 
+  --dark-white: #f6f6f6;
+  --green: #1e7a46;
+  --red: #e11111;
+}
+
 body,
 html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: var(--grey);
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -18,16 +36,16 @@ h2 {
   margin: 0 0 20px;
   font-weight: 800;
   font-size: 36px;
-  color: #333;
+  color: var(--dark);
 }
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #333;
+  color: var(--dark);
 }
 h4 {
   font-size: 18px;
-  color: #333;
+  color: var(--dark);
   font-weight: 600;
 }
 h5 {
@@ -43,13 +61,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #608dfd;
+  color: var(--blue);
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #608dfd;
+  color: var(--blue);
 }
 ul,
 ol {
@@ -58,15 +76,13 @@ ol {
 ul,
 ol {
   padding: 0;
-  webkit-padding: 0;
-  moz-padding: 0;
 }
 hr {
   height: 2px;
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+  background: var(--green);
   margin-bottom: 20px;
   border: 0;
 }
@@ -76,21 +92,21 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #fff;
-  border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border-color: rgba(var(--black-rgb), 0.1);
+  box-shadow: 0 0 5px rgba(var(--white-rgb), 0.1);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: var(--dark);
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: var(--dark-grey);
   font-size: 15px;
   font-weight: 400;
   padding: 8px 2px;
@@ -104,7 +120,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +141,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -134,11 +150,11 @@ hr {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fff;
-  border-color: #608dfd;
+  background-color: white;
+  border-color: var(--blue);
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #608dfd;
+  background-color: var(--blue);
 }
 .section-title {
   margin-bottom: 70px;
@@ -152,7 +168,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, var(--light-blue) 0%, var(--dark-blue) 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -165,9 +181,9 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  color: white;
+  background-color: var(--light-blue) ;
+  background-image: linear-gradient(to right, var(--light-blue) 0%, var(--dark-blue) 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -182,9 +198,9 @@ hr {
 .btn-custom.focus,
 .btn-custom:active,
 .btn-custom.active {
-  color: #fff;
+  color: white;
   background-image: none;
-  background-color: #6372ff;
+  background-color: var(--dark-blue);
 }
 .btn:active,
 .btn.active {
@@ -209,18 +225,18 @@ a:focus,
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
+  background-color: var(--dark-white);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(var(--black-rgb), 0.2);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
-  color: #fff;
+  color: white;
   font-size: 82px;
   font-weight: 700;
   text-transform: uppercase;
@@ -229,10 +245,10 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: var(--light-blue);
 }
 .intro p {
-  color: #fff;
+  color: white;
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;
@@ -246,19 +262,19 @@ header .intro-text {
 }
 /* Features Section */
 #features {
-  background: #f6f6f6;
+  background: var(--dark-white);
 }
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
   transition: all 0.5s;
-  color: #fff;
+  color: white;
   width: 100px;
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
+  box-shadow: 10px 10px 10px rgba(var(--black-rgb), 0.05);
 }
 /* About Section */
 #about {
@@ -276,7 +292,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, var(--light-blue) 0%, var(--dark-blue) 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -291,7 +307,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: var(--light-blue);
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -299,9 +315,9 @@ header .intro-text {
 #about img {
   width: 520px;
   margin-top: 10px;
-  background: #fff;
+  background: white;
   border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 50px rgba(var(--black-rgb), 0.06);
 }
 #about p {
   line-height: 24px;
@@ -310,19 +326,19 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: #fff;
+  background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
+  color: white;
 }
 #services .service-desc {
   margin: 10px 10px 20px;
 }
 #services h2 {
-  color: #fff;
+  color: white;
 }
 #services .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(var(--white-rgb), 0.3);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -334,18 +350,18 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
   border-radius: 50%;
-  color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  color: white;
+  box-shadow: 10px 10px 10px rgba(var(--black-rgb), 0.05);
 }
 #services h3 {
   font-weight: 500;
   padding: 5px 0;
-  color: #fff;
+  color: white;
 }
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(var(--white-rgb), 0.75);
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -367,11 +383,11 @@ header .intro-text {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  color: #fff;
+  color: white;
   background: linear-gradient(
     to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
+    rgba(var(--blue-rgb),0.9) 0%,
+    rgba(var(--light-blue-rgb),0.7) 100%
   );
   padding: 30% 0 0;
   height: 100%;
@@ -381,7 +397,7 @@ header .intro-text {
 }
 .hover-bg .hover-text > h4 {
   opacity: 0;
-  color: #fff;
+  color: white;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   transition: all 0.3s;
@@ -392,7 +408,6 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
-  -webkit-backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -402,10 +417,10 @@ header .intro-text {
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
-  background: #f6f6f6;
+  background: var(--dark-white);
 }
 #testimonials i {
-  color: #e6e6e6;
+  color: var(--dark-white);
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -437,7 +452,7 @@ header .intro-text {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 600;
-  color: #666;
+  color: var(--dark-grey);
 }
 /* Team Section */
 #team {
@@ -455,13 +470,13 @@ header .intro-text {
 }
 #team .thumbnail .caption {
   padding: 10px 0 0;
-  color: #888;
+  color: var(--light-grey);
 }
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
+  color: rgba(var(--white-rgb), 0.75);
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -470,7 +485,7 @@ header .intro-text {
   font-size: 16px;
 }
 #contact h2 {
-  color: #fff;
+  color: white;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -478,14 +493,14 @@ header .intro-text {
 #contact .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(var(--white-rgb), 0.3);
   height: 4px;
   width: 60px;
   bottom: 0;
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
+  color: white;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -495,17 +510,17 @@ header .intro-text {
   padding-top: 20px;
 }
 #contact .text-danger {
-  color: #cc0033;
+  color: var(--red);
   text-align: left;
 }
 #contact .btn-custom {
   margin: 30px 0;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid white;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
+  color: var(--darkest-blue);
+  background: white;
 }
 label {
   font-size: 12px;
@@ -519,10 +534,10 @@ label {
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #444;
-  background-color: #fff;
+  color: var(--dark);
+  background-color: white;
   background-image: none;
-  border: 1px solid #ddd;
+  border: 1px solid var(--dark-white);
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -531,28 +546,28 @@ label {
   transition: none;
 }
 #contact .form-control:focus {
-  border-color: #999;
+  border-color: var(--light-grey);
   outline: 0;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-  color: #777;
+  color: var(--grey);
 }
 .form-control:-moz-placeholder {
-  color: #777;
+  color: var(--grey);
 }
 .form-control::-moz-placeholder {
-  color: #777;
+  color: var(--grey);
 }
 .form-control:-ms-input-placeholder {
-  color: #777;
+  color: var(--grey);
 }
 #contact .contact-item {
   margin: 20px 0;
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
+  color: white;
   margin-bottom: 10px;
   display: block;
 }
@@ -560,7 +575,7 @@ label {
   margin-right: 10px;
 }
 #contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(var(--white-rgb), 0.15);
   padding-top: 50px;
   margin-top: 50px;
   text-align: center;
@@ -574,29 +589,29 @@ label {
   width: 48px;
   height: 48px;
   padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid white;
+  color: white;
   border-radius: 50%;
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
+  color: var(--blue);
+  background: white;
 }
 /* Footer Section*/
 #footer {
-  background: #f6f6f6;
+  background: var(--dark-white);
   padding: 30px 0;
 }
 #footer p {
-  color: #888;
+  color: var(--light-grey);
   font-size: 14px;
 }
 #footer a {
-  color: #608dfd;
+  color: var(--blue);
 }
 #footer a:hover {
-  border-bottom: 2px solid #608dfd;
+  border-bottom: 2px solid var(--blue);
 }
 
 @media (max-width: 768px) {

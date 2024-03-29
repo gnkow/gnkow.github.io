@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "André Guerra",
-    "paragraph": "Biotechnology - Software - Development - Pharma",
+    "paragraph": "Biotechnology - Software - Development - Pharmaceutical",
     "more": "More"
   },
   "navigation": {
@@ -196,7 +196,7 @@
     "name_placeholder": "Full Name",
     "email_placeholder": "Email",
     "message_placeholder": "Your message...",
-    "copyright": "2024 André Guerra React Land Page Template."
+    "copyright": "2024 André Guerra"
   },
   "features": {
     "title": "Features",
