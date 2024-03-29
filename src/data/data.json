@@ -1,8 +1,8 @@
 {
   "header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
-    "more": "Learn More"
+    "title": "André Guerra",
+    "paragraph": "Biotechnology - Software - Development - Pharma",
+    "more": "More"
   },
   "navigation": {
     "title": "RLP",
@@ -195,8 +195,8 @@
     "youtube": "youtube.com",
     "name_placeholder": "Full Name",
     "email_placeholder": "Email",
-    "message_placeholder": "Your message. Please make it as clear as possible.",
-    "copyright": "2024 Andre Guerra React Land Page Template."
+    "message_placeholder": "Your message...",
+    "copyright": "2024 André Guerra React Land Page Template."
   },
   "features": {
     "title": "Features",
