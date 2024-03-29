@@ -4,13 +4,13 @@
   --dark-grey: #555555;
   --dark: #333333;
   --black: #000000;
-  --black-rgb: rgb(0,0,0);
+  --black-rgb:0,0,0;
   --light-blue: #5ca9fb;
   --blue: #608dfd;
   --dark-blue:#6372ff;
   --darkest-blue: #1f386e;
   --white: #ffffff;
-  --white-rgb: rgb(255,255,255); 
+  --white-rgb:255,255,255; 
   --dark-white: #f6f6f6;
   --green: #1e7a46; 
 }
