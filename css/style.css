@@ -259,7 +259,7 @@ header .intro-text {
 }
 /* Features Section */
 #features {
-  background: #f6f6f6;
+  background: var(--white);
 }
 #features i.fa {
   font-size: 38px;
