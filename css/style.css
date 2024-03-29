@@ -3,11 +3,14 @@
   --grey: #777777;
   --dark-grey: #555555;
   --dark: #333333;
+  --black: #000000;
+  --black-rgb: rgb(0,0,0);
   --light-blue: #5ca9fb;
   --blue: #608dfd;
   --dark-blue:#6372ff;
   --darkest-blue: #1f386e;
   --white: #ffffff;
+  --white-rgb: rgb(255,255,255); 
   --dark-white: #f6f6f6;
   --green: #1e7a46; 
 }
@@ -91,8 +94,8 @@ hr {
 }
 #menu.navbar-default {
   background-color: var(--white);
-  border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-color: var(--light-grey);
+  box-shadow: 0 0 10px rgba(var(--black-rgb), 0.15);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
@@ -230,7 +233,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(var(--black-rgb), 0.2);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -272,7 +275,7 @@ header .intro-text {
   padding: 30px 0;
   border-radius: 50%;
   background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 10px rgba(var(--black-rgb), 0.05);
 }
 /* About Section */
 #about {
@@ -315,7 +318,7 @@ header .intro-text {
   margin-top: 10px;
   background: var(--white);
   border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 50px rgba(var(--black-rgb), 0.06);
 }
 #about p {
   line-height: 24px;
@@ -336,7 +339,7 @@ header .intro-text {
 #services .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(var(--white-rgb), 0.3);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -351,7 +354,7 @@ header .intro-text {
   background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
   border-radius: 50%;
   color: var(--white);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 10px rgba(var(--black-rgb), 0.05);
 }
 #services h3 {
   font-weight: 500;
@@ -359,7 +362,7 @@ header .intro-text {
   color: var(--white);
 }
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(var(--white-rgb), 0.75);
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -475,7 +478,7 @@ header .intro-text {
 #contact {
   padding: 100px 0 60px;
   background: linear-gradient(to right, var(--dark-blue) 0%, var(--light-blue) 100%);
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(var(--white-rgb), 0.75);
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -492,7 +495,7 @@ header .intro-text {
 #contact .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(var(--white-rgb), 0.3);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -574,7 +577,7 @@ label {
   margin-right: 10px;
 }
 #contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(var(--white-rgb), 0.15);
   padding-top: 50px;
   margin-top: 50px;
   text-align: center;
